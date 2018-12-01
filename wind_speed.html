@@ -1,0 +1,154 @@
+<!--Weather Dashboard!-->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTC-8">
+	<title>Weather Dashboard</title>
+
+<!-- Linking Bootstrap stylesheet-->
+<script 
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+  crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->  
+<link 
+ rel="stylesheet" 
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+ integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+ crossorigin="anonymous">
+
+<!-- Implementing bootstrap popper so that JavaScript can function -->
+<script
+ src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+ integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+ crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+ src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+ integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+ crossorigin="anonymous"></script>
+ 
+<link 
+ rel="stylesheet"
+ href="style.css">
+
+</head>
+
+
+
+
+<body>
+    <nav 
+     class="navbar navbar-default">
+      <div 
+       class="container-fluid">
+        <div
+         class="navbar-header">
+          <button 
+           type="button" 
+           class="navbar-toggle collapsed" 
+           data-toggle="collapse" 
+           data-target="#bs-example-navbar-collapse-1" 
+           aria-expanded="false">
+            <span
+             class="sr-only">Toggle navigation</span>
+            <span
+             class="icon-bar"></span>
+            <span
+             class="icon-bar"></span>
+            <span 
+             class="icon-bar"></span>
+          </button>
+          <a 
+           class="navbar-brand"
+           href="index.html">Latitude</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div
+         class="collapse navbar-collapse"
+         id="bs-example-navbar-collapse-1">
+          
+          <ul
+           class="nav navbar-nav navbar-right">
+            <li><a
+                 href="data.html">Data</a></li>
+            <li><a
+                 href="comparisons.html">Comparison</a></li>
+            <li
+             class="dropdown">
+              <a
+               href="#"
+               class="dropdown-toggle" 
+               data-toggle="dropdown" 
+               role="button" 
+               aria-haspopup="true" 
+               aria-expanded="false">Plots <span class="caret"></span></a>
+              <ul 
+               class="dropdown-menu">
+                <li><a 
+                     href="max_temperature.html">Latitude vs. Max. Temperature</a></li>
+                <li><a 
+                     href="humidity.html">Latitude vs. Humidity</a></li>
+                <li><a 
+                     href="cloudiness.html">Latitude vs. Cloudiness</a></li>
+                <li><a 
+                     href="wind_speed.html">Latitude vs. Wind Speed</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a 
+                     href="comparison.html">Comparison</a></li>
+                <li><a 
+                     href="data.html">Data</a></li>  
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>   
+    </nav>
+
+<div class="container">
+	<div class="row">
+     <div class="col-md-1"></div>  
+	   <div class="col-md-6">
+      <h1>Latitude vs. Wind Speed</h1>
+	    <img src="Resources/latitude_vs_wind.png">
+	    <p>In regards to wind speed, we can see that 0mph can be found anywhere on the globe. However, what's interesting here is that the northern hemisphere has the potential for greater wind speeeds than the southern hemisphere.</p>
+     </div>    
+	   <div class="col-md-4 sidebar">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Visualizations</h1>
+          </div>
+        </div>
+       <div class="row">
+
+        <div class="col-md-3">    
+            <a href="max_temperature.html">Max Temperature<img src="Resources/latitude_vs_temperature.png" width="200px" height="150px"></a>
+       </div>
+       <div class="col-md-3"></div>
+     
+       <div class="col-md-3">  
+            <a href="humidity.html">Humidity<img src="Resources/latitude_vs_humidity.png" width="200px" height="150px"></a>
+       </div>
+       <div class="col-md-3"></div>  
+    </div>   
+    <div class ="row"> 
+       
+       <div class="col-md-3">  
+         <a href="cloudiness.html">Cloudiness<img src="Resources/latitude_vs_cloudiness.png" width="200px" height="150px"></a>
+       </div>
+       <div class="col-md-3"></div>
+
+       <div class="col-md-3">     
+         <a href="wind_speed.html">Wind Speed<img src="Resources/latitude_vs_wind.png" width="200px" height="150px"></a>
+       </div>
+       <div class="col-md-3"></div>
+     </div>    
+  </div>         
+ <div class="col-md-1"></div>
+</div>      
+</div>	 	
+</body>	
+<html>
